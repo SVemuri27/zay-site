@@ -1,431 +1,300 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>second task</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Zay Product Showcase</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css ">
 </head>
 
 <body>
- 
-    <!-- <h1 style="background-color:rgb(197, 226, 230); text-align: center;"> <i>second</i> task</h1>
-    <p style="text-align: center;">This is <u>HTML (HyperText Markup Language)</u> is the standard markup language
-        paragraph</p>
+    <!-- top Bar start -->
+    <div class="top-bar">
+        <div class="contact-info">
+            <span class="email"><i class="fas fa-envelope"></i> info@company.com</span>
+            <span class="phone"><i class="fas fa-phone"></i> 010-020-0340</span>
+        </div>
+        <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+    </div>
+    <!-- top Bar end -->
 
-    <div class="Category">
-        <h2><i>table</i></h2>
-        <div class="tab">
-            <table border="1">
-                <caption style="font-size: large;"><b>table</b></caption>
-                <tr>
-                    <th>Product</th>
-                    <th>Category</th>
-                    <th>Price</th>
-                </tr>
-                <tr>
-                    <td>Laptop</td>
-                    <td>Electronics</td>
-                    <td>$800</td>
-                </tr>
-                <tr>
-                    <td>Bookshelf</td>
-                    <td>Furniture</td>
-                    <td>$150</td>
-                </tr>
-                <tr>
-                    <td>Coffee Maker</td>
-                    <td>Appliances</td>
-                    <td>$50</td>
-                </tr>
 
-            </table>
-            <div class="para">
-                <h2>What is HTML Tables</h2>
-                <p>An HTML Table is an arrangement of data<br> in rows and columns in tabular format.<br> Tables are
-                    useful for various tasks,<br> such as presenting text information and numerical data.<br> A table is
-                    a useful tool for quickly and easily finding<br> connections between different types of data.<br>
-                    Tables are also used to create databases.</p>
+    <!-- nav Bar start -->
+    <nav class="navbar">
+        <div class="logo">Zay</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <span class="fa fa-fw fa-search"></i></span>
+            <span class="num  rounded-circle">7</span>
+            <span class="fa fa-fw fa-cart-arrow-down"></span>
+            <span class="nine  rounded-circle">+99</span>
+            <span class="fa fa-fw fa-user"></span>
+         
+
+
+        </div>
+    </nav>
+    <!-- nav Bar end -->
+
+    <!-- carousel start-->
+    <div class="carousel-container">
+        <div class="carousel-slide" id="Slide">
+            <div class="carousel">
+                <div class="zay">
+                    <h1>Zay <span> eCommerce</span></h1>
+                    <h2>Tiny and Perfect eCommerce <br>Template</h2>
+                    <p>Zay Shop is an eCommerce HTML5 CSS template with the latest <br>version of Bootstrap 5 (beta 1).
+                        This
+                        template is 100% free<br> provided by TemplateMo website. Image credits go to <a
+                            href="#">Freepik<br>
+                            Stories</a>, <a href="#">Unsplash</a> and <a href="#">Icons 8</a>.</p>
+                </div>
+                <div class="carousel-image">
+                    <img src="img\banner_img_01 (2).jpg" alt="">
+                </div>
+            </div>
+            <div class="carousel">
+                <div class="zay">
+                    <h1>Repr in voluptate</h1>
+                    <h2>Ullamco laboris nisi ut</h2>
+                    <p>We bring you 100% free CSS templates for your websites. If you wish to support TemplateMo, please
+                        make a small contribution via PayPal or tell your friends about our website. Thank you.</p>
+                </div>
+                <div class="carousel-image">
+                    <img src="C:\zay\img\banner_img_01 (2).jpg" alt="Product 3">
+                </div>
+            </div>
+            <div class="carousel">
+                <div class="zay">
+                    <h1>Repr in voluptate</h1>
+                    <h2>Ullamco laboris nisi ut</h2>
+                    <p>We bring you 100% free CSS templates for your websites. If you wish to support TemplateMo, please
+                        make a small contribution via PayPal or tell your friends about our website. Thank you.</p>
+                </div>
+                <div class="carousel-image">
+                    <img src="C:\zay\img\banner_img_01 (2).jpg" alt="Product 3">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-nav">
+            <button onclick="prevSlide()">&#10094;</button>
+            <button onclick="nextSlide()">&#10095;</button>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot active-dot" onclick="moveToSlide(0)"></span>
+            <span class="dot" onclick="moveToSlide(1)"></span>
+            <span class="dot" onclick="moveToSlide(2)"></span>
+        </div>
+    </div>
+    <!-- carousel end -->
+
+    <!-- month start -->
+    <div class="container">
+        <div class="month">
+            <h1>Categories of The Month</h1>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui <br>
+                officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="cont ">
+            <div class="watch">
+                <img src="img\category_img_01.jpg" alt="" class="rounded-circle  img-fluid border">
+                <h3>Watches</h3>
+                <button class="button">Go Shop</button>
+            </div>
+            <div class="shoe">
+                <img src="img\category_img_02.jpg" alt="" class="rounded-circle  img-fluid border">
+                <h3>Shoes</h3>
+                <button class="button">Go Shop</button>
+            </div>
+            <div class="accces">
+                <img src="img\category_img_03.jpg" alt="" class="rounded-circle  img-fluid border">
+                <h3>Accessories</h3>
+                <button class="button">Go Shop</button>
             </div>
         </div>
     </div>
-    <div class="prod">
+    <!-- month end-->
 
-        <a href="c:\zay\index.html"> <img src="c:\zay\img\feature_prod_01.jpg" alt="" width="300" height="300"
-                border="1" /><br /></a>
+    <!-- cards start-->
+    <div class="container">
+        <div class="Featured">
+            <div class="sint">
+                <h1>
+                    Featured
+                    Product</h1>
+                <p>Reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla <br> pariatur. Excepteur sint occaecat
+                    cupidatat non proident.</p>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="img\feature_prod_01.jpg" alt="">
+                        <div class="card-body">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star" style="color:#bcbcbc"></i>
+                                <i class="fas fa-star" style="color:#bcbcbc"></i>
+                                <p>$240.00</p>
+                            </div>
+                           
+                            <h2 class="card-title">Gym Weight</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in
+                                culpa
+                                qui
+                                officia deserunt.</p>
+                            <p class="card-reviews">Reviews (28)</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="C:\zay\img\feature_prod_02.jpg" alt="">
+                        <div class="card-body">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star" style="color:#bcbcbc"></i>
+                                <i class="fas fa-star" style="color:#bcbcbc;"></i>
+                                <p>$480.00</p>
+                            </div>
+                            <h2 class="card-title">Cloud Nike Shoes</h2>
 
-        <img src="c:\zay\img\feature_prod_02.jpg" alt="" width="300" height="300" border="1" usemap="#workmap" />
-        <map name="workmap">
-            <area shape="rect" coords="34,44,270,350" alt="watch" href="c:\myntra\index.html">
-        </map>
-        <br>
-        <iframe src="c:\zay\index.html"> </iframe><br /><br />
-    </div>
+                            <p class="card-text">Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae
+                                pharetra
+                                sed, commodo ullamcorper.</p>
+                            <p class="card-reviews">Reviews (48)</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="C:\zay\img\feature_prod_03.jpg" alt="">
+                        <div class="card-body">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star" ></i>
+                                <i class="fas fa-star" ></i>
+                                <p>$360.00</p>
+                            </div>
+                            <h2 class="card-title">Summer Addides Shoes</h2>
 
-    <div class="vid">
-        <h2>HTML Video</h2>
-        <div class="element">
-            <div class="mp4">
-                <video width="300" controls>
-                    <source src="c:\Users\SucharithaVemuri\Downloads\197564-905005767_small.mp4">
-                </video>
+                            <p class="card-text">Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis
+                                diam,<br> et scelerisque ipsum lobortis nec.</p>
+                            <p class="card-reviews">Reviews (78)</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-
-            <p>The element in HTML allows you to embed video content<br> directly into web pages. It supports various
-                video
-                formats,<br> including MP4, WebM, and Ogg. In this guide,<br> we’ll learn about the key features of
-                HTML5
-                video. <br>video and audio tags are introduced in HTML5.</p>
         </div>
     </div>
-    <div class="list">
-        <h3 style="text-align: center;">Type of list</h3>
-        <div class="unorder">
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>JavaFX</li>
-            </ul>
-            <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>JavaFX</li>
-            </ol>
+    </div>
+    <!-- cards end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Zay Shop</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Consectetur at ligula 10660</li>
+                    <li><i class="fas fa-phone"></i> 010-020-0340</li>
+                    <li><i class="fas fa-envelope"></i> info@company.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Products</h2>
+                <ul>
+                    <li>Luxury</li>
+                    <li>Sport Wear</li>
+                    <li>Men's Shoes</li>
+                    <li>Women's Shoes</li>
+                    <li>Popular Dress</li>
+                    <li>Gym Accessories</li>
+                    <li>Sport Shoes</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Further Info</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Shop Locations</li>
+                    <li>FAQs</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
         </div>
-
+        <div class="footer-bottom">
+            <div class="footer-icons">
+                <ul>
+                    <li class=" rounded-circle ">
+                        <a href="#"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                    </li>
+                    <li class=" rounded-circle ">
+                        <a href="#"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                    </li>
+                    <li class=" rounded-circle ">
+                        <a href="#"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                    </li>
+                    <li class=" rounded-circle ">
+                        <a href="#"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="letter">
+                <input type="email" placeholder="Email address">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </footer>
+    <div class="copy">
+        <p>Copyright © 2021 Company Name | Designed by <a href="#">TemplateMo</a></p>
     </div>
-
-    <form method="post" target="_blank">
-        <fieldset>
-
-            <br><br>
-
-            <label for="text">Lastname:</label>
-            <input type="text" name="lname" placeholder="enter your lname">
-            <br><br>
-            <label for="file">file:</label>
-            <input type="file" name="file"><br><br>
-
-            <label for="range">Range:</label>
-            <input type="range" name="range" min="0" max="100">
-            <br><br>
-            <label for="radio">radio:</label><br>
-            <input type="radio" name="lang" value="HTML">
-            <label for="html">HTML</label><br>
-            <input type="radio" name="lang" value="CSS">
-            <label for="css">CSS</label><br>
-            <input type="radio" name="lang" value="JavaScript">
-            <label for="javascript">JavaScript</label>
-            <br>
-            <br>
-            <label for="checkbox">Checkbox:</label><br>
-            <input type="checkbox" name="html">
-            <label for="html">HTML</label><br>
-            <input type="checkbox" name="css">
-            <label for="css"> CSS</label><br>
-            <input type="checkbox" name="javascript">
-            <label for="javascript">javascript</label><br><br>
-            <br>
-            <label for="datetime">Datetime-local:</label>
-            <input type="datetime-local" name="datetime">
-            <br><br>
-
-            <label for="fruits">Fruits:</label>
-            <input type="text" list="fruits">
-            <datalist id='fruits'>
-                <option value="Apple"></option>
-                <option value="Banana"></option>
-                <option value="Orange"></option>
-                <option value="Grapes"></option>
-                <option value="Pears"></option>
-            </datalist>
-            <br>
-            <br>
-            <textarea name="html" rows="4" cols="50">text area box </textarea>
-            <br><br>
-            <a href="C:\second task\index.html"><button type="button">submit</button></a>
-            <a href="C:\second task\login.html"> <button type="button">reset</button></a></a>
-        </fieldset>
-    </form>
-    <div class="mail">
-        email to <a href="mailto: SVemuri332@everestdx.com">
-            Click to Send Mail
-        </a>
-    </div>
-
-    <div class="tooltip">Hover over me
-        <span class="tooltiptext">Tooltip text</span>
-    </div>
+    <!-- footer end -->
 
 
-    <p><img src="c:\zay\img\feature_prod_02.jpg" alt="" style="width:170px;height:170px;margin-left:15px;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
-        lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget,
-        auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu,
-        lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi,
-        sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui
-        eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor
-        porta. Cras ac leo purus. Mauris quis diam velit.</p>
-    <div class="newspaper">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-        suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
-        vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
-        iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-        possim assum.
-    </div>
-    <div class="pagination">
-        <a href="#">&laquo;</a>
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">6</a>
-        <a href="#">&raquo;</a>
-    </div> -->
-    <!-- <div class="grid">
-    <div class="iteams" id="iteams1">Dabba1</div>
-    <div class="iteams" id="iteams2" >Dabba2</div>
-    <div class="iteams">Dabba3</div>
-    <div class="iteams">Dabba4</div>
-</div> -->
+        <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.carousel');
+        const dots = document.querySelectorAll('.dot');
 
-    <!-- <div class="header">Header</div>
-    <div class="wrapper" >
- <div class="aside aside-1">Aside 1</div>
- <div class="main">
-      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
-      </div>
-    <div class="aside aside-2">Aside 2</div>
-    </div>
-    <footer class="footer">Footer</footer> -->
-
-
-    <!-- <header class="header">Header</header>
-    <div class="wrapper" >
- <div class="aside aside-1">Aside 1</div>
- <div class="main">
-      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
-      </div>
-    <div class="aside aside-2">Aside 2</div>
-    </div>
-    <footer class="footer">Footer</footer> -->
-    <!-- <script>
-          let message = 'Hello!'; 
-
-alert(message); 
-    </script>  -->
-
-    <!-- <div class="okl">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos qui recusandae iusto, dignissimos quo aliquid ut aut natus voluptas autem aspernatur nesciunt ipsum cupiditate nobis officia, dolorum, repellendus cum at? Ad officiis vero architecto perspiciatis similique unde aut perferendis expedita illo commodi temporibus suscipit rem libero eaque eum eligendi eveniet ullam doloribus, dolorem error omnis! Est deleniti qui officiis, eligendi explicabo nobis officia odit doloremque sit, adipisci corporis ut incidunt. Cumque mollitia quia nemo totam, eum laborum itaque ipsam quidem. Placeat, temporibus! Sapiente quae, quaerat a magni eum iste laborum consectetur neque eligendi quam molestiae odio? Vitae nulla laborum porro aut sapiente vel dolore cupiditate nemo quibusdam sunt quis et, molestiae aliquam incidunt facere nisi minus ratione rerum molestias nihil repellendus blanditiis dolorem fugiat. Illum ipsam sint odio voluptate! Numquam, dolore dignissimos itaque nulla impedit deleniti alias aut totam ut sit repudiandae. Magni beatae laboriosam omnis velit perferendis natus sit iste eveniet nostrum dolores, dolorem, molestias similique. Nulla culpa repudiandae consectetur nesciunt ratione laboriosam? Sit recusandae eligendi corrupti natus accusantium rerum doloribus cupiditate totam necessitatibus aspernatur ducimus, soluta temporibus sapiente atque architecto porro velit culpa unde delectus hic error labore vero? Neque libero distinctio mollitia, voluptatum perferendis quibusdam eius non?</p>
-    </div> -->
-
-    <!-- <div class="top">Header</div>
-    <div class="test" >
- <div class="side side-1">Aside 1</div>
-
-      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
-     
-    <div class="aside aside-2">Aside 2</div>
-    </div>
-    <footer class="footer">Footer</footer> -->
-
-    <!-- <div class="flex">
-            <div class="item">Item 1</div>
-            <div class="item">Item 2</div>
-            <div class="item">Item 3</div>
-            <div class="item">Item 4</div>
-            <div class="item">Item 5</div>
-            <div class="item">Item 6</div>
-        </div>-->
-        <p id="demo"></p> 
-
-        <img  src="img\category_img_03.jpg" id="image" width="160" height="120">
-        <p id="demo1">ghfhjdscksm</p>
-       <button id="btn">try it</button>
-       <p id="demo2"></p>
-       <p id="demo3"></p>
-        
-
-    <script>
-document.getElementById("demo").innerHTML = "Date : " + Date();
-  document.getElementById("image").src="img/feature_prod_02.jpg";
-
-document.getElementById("demo1").style.color="blue";
-
-
-     document.getElementById("btn").addEventListener("click", displayDate);
-     function displayDate(){
-document.getElementById("demo2").innerHTML=Date();
-     }
-
-
-
-    
-
-     let mypromise=new Promise(function(resolve, reject){
-        let X = 4;
-        if(X>9){
-            resolve();
-        }else{
-            reject();
+        function updateSlide() {
+            document.getElementById('Slide').style.transform = `translateX(-${currentIndex * 100}%)`;
+            dots.forEach((dot, index) => dot.classList.toggle('active-dot', index === currentIndex));
         }
-      });
-      mypromise.
-      then(function(){
-        console.log("ok");
-      }).
-        catch(function(){
-            console.log("error");
-        });
-      
 
-      
-        // <p>The “||OR” operator is represented with two vertical line symbols:</p>
-        // alert(1 || 2);
-        // alert(2 || 3);
-        // alert(true || false);
-        // alert(false || false);
-
-        // The AND operator is represented with two ampersands &&
-        // alert(5 && 5);
-        // alert(5 && 6);
-        // alert(6 && 6);
-        // alert(false && false); 
-
-
-//         let sum = 3;
-
-// while (true) {
-
-//   let value = +prompt("Enter a number", '');
-//   if (!5) break; // (*)
-
-//   sum += value;
-
-// }
-// alert( 'Sum: ' + sum );
-
-
-// An object
-// let john = {
-//   name: "John",
-//   sayHi: function() {
-//     alert("Hi buddy!");
-//   }
-// };
-
-// john.sayHi();
-
-
-
-   //character accessing
-// let str = `Hello`;
-// alert( str[2] ); 
-// alert( str.at(1) ); 
-// alert( str[str.length -2] ); 
-// alert( str.at(-1) );
-
-
-// let str = 'Hi';
-
-// str[0] = 'h'; 
-// alert( str[0] ); 
-
-//changing the case
-// alert( 'Interface'.toUpperCase() ); // INTERFACE
-// alert( 'Interface'.toLowerCase() ); // interface
-
-
-//sub string
-// let str = 'hello  id';
-// alert( str.indexOf('hello') );s
-// alert( str.indexOf('hello') ); 
-
-// alert( str.indexOf("id") );
-
-
-
-// arrya
-// let arr = [ 'Apple', { name: 'John' }, true, function() { alert('hello'); } ];
-// alert( arr[1].name ); 
-// arr[3](); 
-
-// We can replace an element:
-// fruits[2] = 'Pear'; // now ["Apple", "Orange", "Pear"]
-
-// …Or add a new one to the array:
-// fruits[3] = 'Lemon'; // now ["Apple", "Orange", "Pear", "Lemon"]
-
-
-// push
-// let fruits = ["apple", "banana"];
-// fruits.push("orange");
-// console.log(fruits1);
-// output
-//   ["apple", "banana", "orange"];
-
-//   let fruits2 = ["apple", "banana"];
-// fruits.pop("banana");
-// console.log(fruits2);
-   
-
-
-
-
-// dom example
-
-
-const headerElement = document.getElementById('header');
-
-const images = document.getElementsByTagName('img');
-
-
-// asyncawait exapl
-
-async function fetchData() {
-    try {
-        let response = await fetch('https://jsonplaceholder.typicode.com/todos');
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlide();
         }
-        let data = await response.json();
-        console.log(data);
-    } catch (error) {
-        console.error('There was a problem with the fetch operation:', error);
-    }
-}
-fetchData();
 
+        function prevSlide() {
+            currentIndex = (currentIndex - 1) % slides.length;
+            updateSlide();
+        }
 
+        function moveToSlide(index) {
+            currentIndex = index;
+            updateSlide();
+        }
 
-// set map
-const fruits = new Map();
-
-// Set Map Values
-fruits.set("apples", 500);
-fruits.set("bananas", 300);
-fruits.set("oranges", 200);
- fruits.set("apples", 200);
-let numb = fruits.get("apples");
-document.getElementById("demo").innerHTML = "There are " + numb + " apples.";
-
-const arrowFunc = () => {
-    console.log("Declared using the arrow functions");
-}
-arrowFunc();
-
-
-
-
-</script>
-
-
+       
+        // setInterval(nextSlide, 5000);
+    </script>
 
 </body>
 
