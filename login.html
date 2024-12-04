@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css ">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            background-image: linear-gradient(rgb(240, 156, 225), rgb(171, 171, 107));
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+       
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+
+        <div class="email" style="display: flex;">
+            <i class="fa fa-envelope"></i>
+            <label for="email">Email:</label>
+        </div>
+        <input type="email" name="email" placeholder="Enter your email">
+        <br><br>
+        <div class="pwd" style="display: flex;">
+            <i class="fa fa-lock"></i>
+            <label for="password">Password:</label>
+        </div>
+        <input type="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+        <a href="C:\second task\index.html"><button type="button">Next</button></a>
+    </form>
+    <div id="grad1"></div>
+</body>
+
+</html>
